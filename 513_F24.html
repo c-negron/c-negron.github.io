@@ -39,11 +39,50 @@ Syllabus: <a href="513syl.pdf">here</a>
 </p>
 All HW problems are out of Humphreys text (jk).  To be turned in in class.<br><br>
 
+<hr style="height:2px;width:85%;margin-left:0;border-width:0;background-color: #ff1493;
+background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
+<br><br>
+
 <b>HW 2</b>, do some of the problems (Due Sept 23):<br><br>
 
-<b>1.</b><br><br>
+<b>1.</b> [Important] Prove that the Lie algebra sl<sub>n</sub>(<b>C</b>) is simple.  [Hint: Use the root decomposition and weight arguments to show that the adjoint representation is simple.]<br><br>
 
-<b>2.</b><br><br><br>
+<b>2.</b> [A good exercise] Show that the adjoint representation for sl<sub>n</sub>(<b>C</b>) is self-dual. [Hint: Look at the highest weights.]<br><br>
+
+<b>3.</b> [A good exercise] (a) Show that the trace form tr: sl<sub>n</sub>(<b>C</b>) &otimes; sl<sub>n</sub>(<b>C</b>) &rarr; <b>C</b>, tr(x,y) = Tr(xy), is an sl<sub>n</sub>(<b>C</b>)-invariant bilinear form on sl<sub>n</sub>(<b>C</b>), up to scaling.  (Here sl<sub>n</sub>(<b>C</b>)-invariance means that tr is a map of sl<sub>n</sub>(<b>C</b>)-representations.)<br>
+(b) For x in sl<sub>n</sub>(<b>C</b>)<sub>&mu;</sub> and y in sl<sub>n</sub>(<b>C</b>)<sub>&lambda;</sub>, prove that nonvanishing of tr(x,y) implies &lambda; = - &mu;.<br>
+(c) Show that the trace form is non-degenerate, restricts to a non-degenerate form on the Cartan.  [Hint: The trace form is associated to a map of representations sl<sub>n</sub>(<b>C</b>) &rarr; sl<sub>n</sub>(<b>C</b>)<sup>&ast;</sup>, by HW 1 #5, say.]<br>
+(d) Show that any invariant form &beta; on sl<sub>n</sub>(<b>C</b>) is obtained as a scaling &beta; = c&middot;tr at some c in <b>C</b>.  [Hint: How many maps between sl<sub>n</sub>(<b>C</b>) and its dual are there?]<br>
+(e) Observe that the trace form induces a unique sl<sub>n</sub>(<b>C</b>)-invariant non-degenerate form &kcy; on the dual sl<sub>n</sub>(<b>C</b>)<sup>&ast;</sup> as well, and that this form is also unique up to scaling.<br><br>
+
+<b>4.</b> [Important] Let's call an element t in sl<sub>n</sub>(<b>C</b>) semisimple if it acts semisimply on the standard representation &Vopf; = <b>C</b><sup>n</sup>, i.e. if it acts via a diagonalizable matrix.  Prove that t is semisimple if and only if the adjoint operator ad<sub>t</sub> = [t, - ]: sl<sub>n</sub>(<b>C</b>) &rarr; sl<sub>n</sub>(<b>C</b>) is semisimple.<br><br>
+
+<b>5.</b> [Kind of important] Let <b>t</b> be a Lie subalgebra in sl<sub>n</sub>(<b>C</b>) satisfying the following:<br>
+&emsp;(a) <b>t</b> is abelian.<br>
+&emsp;(b) Every element t in <b>t</b> is semisimple.<br>
+&emsp;(c) <b>t</b> is a maximal Lie subalgebra in sl<sub>n</sub>(<b>C</b>) which satisfies (a) and (b), with respect to inclusions of subalgebras.<br>
+Prove that there is an invertible matrix A in SL<sub>n</sub>(<b>C</b>) so that A<b>t</b>A<sup>-1</sup> = <b>h</b>, where <b>h</b> is the standard Cartan.<br><br>
+
+<b>Remark.</b> Let us note here that, at all A in SL<sub>n</sub>(<b>C</b>), the multiplicative adjoint operator<br>
+&emsp; Ad<sub>A</sub>:sl<sub>n</sub>(<b>C</b>) &rarr; sl<sub>n</sub>(<b>C</b>), &emsp; Ad<sub>A</sub>(x) := A&middot;x&middot;A<sup>-1</sup>,<br>
+is a Lie algebra automorphism.)  Such a maximal semisimple subalgebra as in 2 is called <i>a</i> Cartan subalgebra in sl<sub>n</sub>(<b>C</b>), and the above problem establishes uniqueness of the Cartan subalgebra up to the natural adjoint action of the associated group SL<sub>n</sub>(<b>C</b>).<br><br>
+
+<b>6.</b> Let L = L(&omega;<sub>k</sub>) be a fundamental simple over sl<sub>n</sub>(<b>C</b>).  Prove that the m-th symmetric power S<sup>m</sup>(L) is simple at all positive m.  [Begin with the standard representation L = &Vopf;, then try to generalize your argument.]<br><br>
+
+<b>7.</b> Consider the algebra <b>Z</b>[P], which we consider as the free <b>Z</b>-module with basis { t<sup>&lambda;</sup> : &lambda; &isin; P } and multiplication t<sup>&lambda;</sup>&middot; t<sup>&mu;</sup> = t<sup>(&lambda; + &mu;)</sup>.  Define the character of any sl<sub>n</sub>(<b>C</b>)-represetnation V as<br>
+ch(V) = &Sigma;<sub>&lambda; &isin; P</sub> dim<sub><b>C</b></sub>(V<sub>&lambda;</sub>)&middot;t<sup>&lambda;</sup><br>.<br>
+
+(a) Prove that, for arbitrary sl<sub>n</sub>(<b>C</b>)-representations V and W, we have V &cong; W if and only if ch(V) = ch(W).<br>
+(b) Calculate the characters of the fundamental simples ch(L(&omega;<sub>k</sub>)), for 1 &leq; k &leq; n, when n = 3 and 4.<br><br>
+
+<b>8.</b> Take &alpha;<sub>1</sub> and &alpha;<sub>2</sub> the standard simple roots for sl<sub>3</sub>(<b>C</b>), and &gamma;= &alpha;<sub>2</sub> + &alpha;<sub>2</sub> remaining positive root.  Show that there is a Lie algebra automorphisms &phi;: sl<sub>3</sub>(<b>C</b>) &rarr; sl<sub>3</sub>(<b>C</b>) which stabilizes the Cartan, &phi;(<b>h</b>) = <b>h</b>, but which has<br>
+&phi;(e<sub>&alpha;<sub>1</sub></sub>) = f<sub>&alpha;<sub>1</sub></sub>, &nbsp; &phi;(e<sub>&alpha;<sub>2</sub></sub>) = e<sub>&gamma;</sub>, &nbsp; &phi;(e<sub>&gamma;</sub>) = e<sub>&alpha;<sub>2</sub></sub>, &nbsp; &phi;(f<sub>&alpha;<sub>1</sub></sub>) = e<sub>&alpha;<sub>1</sub></sub>, &nbsp; &phi;(f<sub>&alpha;<sub>2</sub></sub>) = f<sub>&gamma;</sub>, &nbsp; &phi;(f<sub>&gamma;</sub>) = f<sub>&alpha;<sub>2</sub></sub> &nbsp;.<br><br>
+
+This is to say, there <i>are</i> Lie algebra automorphisms which permute the root spaces.<br><br>
+
+<hr style="height:2px;width:85%;margin-left:0;border-width:0;background-color: #ff1493;
+background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
+<br><br>
 
 <b>HW 1</b>, do some of the problems (Due Sept 11):<br><br>
 
