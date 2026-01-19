@@ -1,139 +1,375 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head>
-  
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Structures in Low-Dimensional Topology Workshop 2026 — AIM</title>
+  <meta name="description" content="New Structures in Low-Dimensional Topology Workshop at the American Institute of Mathematics (AIM), Pasadena, CA, June 1–5, 2026." />
   <style>
-body {background-color: #E5E7E9; color:black;}
-p {color: black;
-	font-family: times;
-	font-size: 16px;}
-h1, h5 {display:inline;}
-li{margin: 10px 0;
-    color: black;}
-a:link {
-  color: blue;
-}
-a:visited {
-  color: blue;
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 90%;
-}
-
-img {
-    float: right;
-    margin: 10px;
-}
-
-td, th {
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+    :root{
+      --bg:#ffffff; --text:#111827; --muted:#6b7280;
+      --border:#e5e7eb; --primary:#0f2a5f; --accent:#b45309;
+      --card:#f9fafb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg);color:var(--text);line-height:1.55}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1050px;margin:0 auto;padding:24px}
+    header{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:10}
+    .nav{display:flex;gap:14px;align-items:center;justify-content:space-between;padding:14px 0}
+    .nav-left{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+    .brand{font-weight:700}
+    .pill{font-size:12px;color:var(--muted);border:1px solid var(--border);padding:4px 10px;border-radius:999px}
+    .nav-links{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+    .btn{display:inline-block;background:var(--primary);color:#fff;padding:10px 14px;border-radius:10px;font-weight:600}
+    .btn.secondary{background:#fff;color:var(--primary);border:1px solid var(--border)}
+    .hero{padding:28px 0 10px}
+    .hero-top{display:grid;grid-template-columns:1fr;gap:14px}
+    .banner{
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+    }
+    .banner img{display:block;width:100%;height:auto}
+    h1{font-size:34px;line-height:1.15;margin:0 0 10px}
+    .sub{color:var(--muted);max-width:78ch;margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+    .kvs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .kv{padding:10px;border:1px solid var(--border);border-radius:12px;background:#fff}
+    .kv .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+    .kv .v{font-weight:650;margin-top:2px}
+    section{padding:26px 0;border-top:1px solid var(--border)}
+    h2{font-size:22px;margin:0 0 12px}
+    ul{margin:10px 0 0 18px}
+    .table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .table th,.table td{padding:10px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}
+    .table th{background:var(--card);font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+    .note{font-size:13px;color:var(--muted)}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .tag{font-size:12px;border:1px solid var(--border);border-radius:999px;padding:4px 10px;background:#fff;color:var(--muted)}
+    footer{padding:24px 0;color:var(--muted)}
   </style>
-
-<title>New structures '26</title>
-
 </head>
-<body style="width: 95%">
-<p>
-<img src="pasadena.jpg" width="270">
-<font style="color: #ff7f50;" face="sans-serif" size="6">New structures in low-dimensional topology workshop 2026</font><br><br>
-<font size="5">American Institute of Mathematics (<a href="https://aimath.org/">AIM</a>), Pasadena CA</font><br>
-<font size="5">June 1-5, 2026</font>
-</p>
-<font size=4px> Organizers: <a href="https://www.aczenky.com/">Agustina Czenky</a>, <a href="./">Cris Negron</a>, <a href="https://www.pma.caltech.edu/people/davide-passaro">Davide Passaro</a><br><br>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <div class="nav-left">
+        <div class="brand">AIM Workshop</div>
+        <span class="pill">June 1–5, 2026 • Pasadena, CA</span>
+      </div>
+      <div class="nav-links">
+        <a href="#program">Program</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#applying">Applying</a>
+        <a href="#logistics">Logistics</a>
+        <a href="#policies">Policies</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="hero-top">
+      <div class="banner" aria-label="Pasadena banner image">
+        <img src="https://c-negron.github.io/pasadena.jpg" alt="Aerial view of Pasadena with mountains in the background" />
+      </div>
+
+      <div>
+        <h1>New Structures in Low-Dimensional Topology Workshop 2026</h1>
+        <p class="sub">
+          Our Simons Collaboration, <a href="https://urldefense.com/v3/__https://sites.google.com/view/newstructuresinlowdimtopology/home__;!!LIr3w8kk_Xxm!pDLMLkamC_VH9YoflGmwMX-eahsWS9XwBPa4050iLaGGHLYQKpWTZ1E7B9j-SjS7pOo48R8EGNzxTdkFnYc$">New Structures in Low-Dimensional Topology</a>,
+          aims to bring together researchers across a wide array of disciplines to make progress on deep questions in the field.
+          Some of these questions are directly concerned with smooth manifolds in low dimensions, while others center the formal algebraic structures
+          which intertwine with, and emerge out of studies of manifolds and cobordisms more broadly.
+        </p>
+        <p class="sub">
+          This workshop aims to introduce graduate students and postdocs to the foundational mathematics underlying core areas such as gauge theory,
+          quantum topology, categorification, and 4-manifolds, and to provide entry points into current research. We will feature several lecture series
+          and research talks by junior faculty, designed to bridge gaps between varied subfields and to catalyze new collaborations.
+        </p>
+
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#applying">Apply</a>
+          <a class="btn secondary" href="#program">View preliminary timetable</a>
+        </div>
+
+        <div class="tags">
+          <span class="tag">Series lectures</span>
+          <span class="tag">Research talks</span>
+          <span class="tag">Grad/postdoc focused</span>
+          <span class="tag">Low-dimensional topology</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid" style="padding:18px 0 26px">
+    <div class="card">
+      <h2 style="margin-top:0">Quick facts</h2>
+      <div class="kvs">
+        <div class="kv">
+          <div class="k">Dates</div>
+          <div class="v">June 1–5, 2026</div>
+        </div>
+        <div class="kv">
+          <div class="k">Venue</div>
+          <div class="v">
+            American Institute of Mathematics (AIM), Pasadena, CA
+          </div>
+        </div>
+        <div class="kv">
+          <div class="k">Time zone</div>
+          <div class="v">Pacific Time (PT)</div>
+        </div>
+        <div class="kv">
+          <div class="k">Organizers</div>
+          <div class="v">
+            <a href="https://urldefense.com/v3/__https://www.aczenky.com/__;!!LIr3w8kk_Xxm!pDLMLkamC_VH9YoflGmwMX-eahsWS9XwBPa4050iLaGGHLYQKpWTZ1E7B9j-SjS7pOo48R8EGNzxCMZghrk$">Agustina Czenky</a>,
+            <a href="https://urldefense.com/v3/__https://c-negron.github.io/__;!!LIr3w8kk_Xxm!pDLMLkamC_VH9YoflGmwMX-eahsWS9XwBPa4050iLaGGHLYQKpWTZ1E7B9j-SjS7pOo48R8EGNzxNh2ZFDA$">Cris Negron</a>,
+            <a href="https://urldefense.com/v3/__https://www.pma.caltech.edu/people/davide-passaro__;!!LIr3w8kk_Xxm!pDLMLkamC_VH9YoflGmwMX-eahsWS9XwBPa4050iLaGGHLYQKpWTZ1E7B9j-SjS7pOo48R8EGNzxpOU_Vqs$">Davide Passaro</a>
+          </div>
+        </div>
+      </div>
+      <p class="note" style="margin:12px 0 0">
+        AIM is housed on the 8th floor of Caltech Hall on the campus of Caltech in Pasadena, CA.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0">Support and funding</h2>
+      <ul>
+        <li><strong>Travel & lodging:</strong> Support available for non-local participants (subject to availability).</li>
+        <li><strong>Grant support:</strong> Simons Collaboration Grant No. 999367.</li>
+      </ul>
+      <p class="note" style="margin-top:10px">
+        Additional venue specifics (room, check-in procedures) will be posted when available.
+      </p>
+    </div>
+  </div>
+
+  <section id="speakers">
+    <h2>Speakers</h2>
+
+    <div class="card" style="margin-bottom:14px">
+      <h3 style="margin:0 0 6px;font-size:16px">Series</h3>
+      <ul>
+        <li><strong>Abhishek Mallick</strong> (Dartmouth)</li>
+        <li><strong>Sunghyuk Park</strong> (Harvard)</li>
+        <li><strong>Joshua Wang</strong> (IAS &amp; Princeton)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3 style="margin:0 0 6px;font-size:16px">Research talks</h3>
+      <ul>
+        <li>TBA</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="program">
+    <h2>Structure and preliminary timetable</h2>
+    <p class="note">All times listed in Pacific Time unless otherwise noted. This timetable is preliminary and subject to change.</p>
+
+    <table class="table" aria-label="Preliminary timetable">
+      <thead>
+        <tr>
+          <th style="width:180px">Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>9:30–10:30</strong></td>
+          <td>Series 1</td>
+          <td>Series 2</td>
+          <td>Series 1</td>
+          <td>Series 3</td>
+          <td>Grad talks #2</td>
+        </tr>
+        <tr>
+          <td><strong>Break</strong></td>
+          <td colspan="5">Break</td>
+        </tr>
+        <tr>
+          <td><strong>11:00–12:00</strong></td>
+          <td>Series 2</td>
+          <td>Grad talks #1</td>
+          <td>Series 2</td>
+          <td>Series 1</td>
+          <td>Series 3</td>
+        </tr>
+        <tr>
+          <td><strong>Lunch</strong></td>
+          <td colspan="5">Lunch</td>
+        </tr>
+        <tr>
+          <td><strong>2:00–3:30</strong></td>
+          <td>Research 1</td>
+          <td>Series 3</td>
+          <td>Free!</td>
+          <td>Research 2</td>
+          <td>Research 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="applying">
+    <h2>Applying</h2>
+    <div class="card">
+      <p>
+        We can support travel and accommodations for non-local participants.
+        </strong>
+      </p>
+      <p>
         
-<b>Description</b><br><br>
+        <a href="https://urldefense.com/v3/__https://forms.gle/SoSH1s2aKMB4g5hn7__;!!LIr3w8kk_Xxm!pDLMLkamC_VH9YoflGmwMX-eahsWS9XwBPa4050iLaGGHLYQKpWTZ1E7B9j-SjS7pOo48R8EGNzxVHNdr18$">Application page</a>
+      </p>
+      <p class="note">
+        If you are preparing to apply, consider drafting a brief statement of interest and (if relevant) a short description of your background and topical focus
+        in low-dimensional topology and adjacent areas.
+      </p>
+    </div>
+  </section>
 
-Our Simons Collaboration, <a href="https://sites.google.com/view/simons-newstructures/home">New Structures in Low-Dimensional Topology</a>, aims to bring together researchers across a wide array of disciplins to make progress on deep questions in the field. Some of these questions are directly concerned with smooth manifolds in low dimensions, while others center the formal algebraic structures which intertwine with, and emerge out of studies of manifolds and cobordisms more broadly.  Our PIs, postdocs, graduate students, friends and colleagues specialize in topics ranging from gauge theory, quantum topology, categorification, 4-manifolds, and even mathematical physics, all intersecting at the juncture of low-dimensional topology.<br><br>
+  <section id="logistics">
+    <h2>Logistics</h2>
+    <div class="card">
+      <p><strong>Venue:</strong> American Institute of Mathematics (AIM), Pasadena, CA.</p>
+      <p class="note">
+        AIM is housed on the 8th floor of Caltech Hall on the campus of Caltech in Pasadena, CA.
+      </p>
 
-This workshop aims to introduce graduate students and postdocs to the foundational mathematics which underlies these core areas, and to provide entry points into the leading edge of research. We will have a number of lecture series and research talks by junior faculty.  These talks are meant, specifically, to bride the gaps between the varied areas of research which we individually specialize in. We also aim to provide participants with an opportunity to develop new mathematical connections, or return to pre-existing ones, in the hopes of sparking long-lasting collaborations in low-dimensional topology.<br><br>
+      <div style="margin:16px 0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.3706028547745!2d-118.12866918981516!3d34.13685947301305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c4a66f8e98bd%3A0x60dc43c6a45fe094!2sCaltech%20Hall!5e0!3m2!1sen!2sus!4v1768244876717!5m2!1sen!2sus"
+          width="100%"
+          height="350"
+          style="border:0;border-radius:8px"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Map showing location of Caltech Hall">
+        </iframe>
+      </div>
+    </div>
 
-<b>Speakers</b><br><br>
+    <div class="card" style="margin-top:14px">
+      <h3 style="margin:0 0 12px;font-size:18px">Getting there</h3>
 
-~ Series<br>
-&nbsp;&nbsp;&nbsp;. Abhishek Mallick (Dartmouth)<br>
-&nbsp;&nbsp;&nbsp;. Sunghyuk Park (Harvard)<br>
-&nbsp;&nbsp;&nbsp;. Joshua Wang (IAS & Princeton)<br><br>
+      <h4 style="margin:12px 0 6px;font-size:15px">By plane</h4>
+      <p style="margin:0 0 6px">
+        The most convenient airports for reaching Pasadena are <strong>Hollywood Burbank Airport (BUR)</strong>
+        and <strong>Los Angeles International Airport (LAX)</strong>.
+      </p>
 
-~ Research talks<br>
-&nbsp;&nbsp;&nbsp;. TBA<br><br>
+      <ul>
+        <li>
+          <strong>Burbank (BUR):</strong>
+          The closest airport to Pasadena (≈25 minutes by car).
+          Rideshare services (Uber/Lyft), taxis, and rental cars are readily available at the terminal.
+          This is the recommended airport when possible.
+        </li>
+        <li>
+          <strong>LAX:</strong>
+          A major international airport with more flight options, but farther from Pasadena
+          (≈45–75 minutes depending on traffic).
+          <ul>
+            <li>
+              <strong>Rideshare / taxi:</strong>
+              Upon arrival at LAX, follow signs to <strong>LAX-it</strong>, the designated pickup area for
+              Uber, Lyft, and taxis. Free LAX-it shuttles run frequently from each terminal.
+            </li>
+            <li>
+              <strong>Public transportation:</strong>
+              Take the <strong>FlyAway bus</strong> from LAX to
+              <strong>Union Station</strong>.
+              From Union Station, take the
+              <strong>Metro A Line</strong> toward <em>Azusa</em> and exit at
+              <strong>Memorial Park Station</strong>
+              or <strong>Del Mar Station</strong>.
+              Both stations are within walking distance of
+              <strong>Caltech</strong>
+              and the American Institute of Mathematics.
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-<b>Applying</b><br><br>
+      <h4 style="margin:14px 0 6px;font-size:15px">By car</h4>
+      <p style="margin:0 0 6px">
+        Pasadena is easily accessible by car via major freeways in the Los Angeles area.
+      </p>
 
-&nbsp;&nbsp;&nbsp;We can support travel and accommodations for non-local participants.  Apply <a href="./new_structures26_app">here</a>.<br><br>
+      <ul>
+        <li>
+          <strong>Parking at Caltech:</strong>
+          Visitor parking is available on the
+          <strong>Caltech</strong>
+          campus, primarily in designated visitor lots and parking structures.
+        </li>
+        <li>
+          <strong>Parking policies:</strong>
+          Parking on campus generally requires a permit or payment at pay stations.
+          Detailed instructions (including recommended lots and daily rates) will be provided to
+          accepted participants prior to the workshop.
+        </li>
+        <li>
+          <strong>Street parking:</strong>
+          Limited metered street parking is available in surrounding neighborhoods, subject to posted
+          time limits and city regulations.
+        </li>
+      </ul>
 
-<b>Structure</b><br><br>
+      <p class="note" style="margin-top:10px">
+        We strongly recommend checking parking instructions provided by the organizers shortly before
+        arrival, as campus parking policies may change.
+      </p>
+    </div>
 
-&nbsp;&nbsp;&nbsp;Preliminary timetable<br><br>
+    <div class="card" style="margin-top:14px">
+      <h3 style="margin:0 0 8px;font-size:18px">Additional information</h3>
+      <ul style="margin:0">
+        <li><strong>Lodging:</strong> TBA</li>
+        <li><strong>Meals:</strong> TBA</li>
+        <li><strong>Accessibility:</strong> TBA</li>
+      </ul>
+    </div>
+  </section>
 
-<table style="width:90%">
-<tr>
-	<th></th>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-	<td>9:30-10:30</td>
-    <td>Series 1</td>
-    <td>Series 2</td>
-    <td>Series 1</td>
-    <td>Series 3</td>
-    <td>grad talks #2</td>
-</tr>
-<tr>
-	<td>break</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>11:00-12:00</td>
-    <td>Series 2</td>
-    <td>grad talks #1</td>
-    <td>Series 2</td>
-    <td>Series 1</td>
-    <td>Series 3</td>
-</tr>
-<tr>
-	<td>Lunch</td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>2:00-3:30</td>
-    <td>Research 1</td>
-    <td>Series 3</td>
-    <td> Free!</td>
-    <td>Research 2</td>
-	<td>Research 3</td>
-</tr>
-</table>
-<br><br>
-This workshop is supported by Simons Collaboration Grant No. 999367
-<br><br>
-</font>
+  <section id="policies">
+    <h2>Policies</h2>
+    <ul>
+      <li><strong>Code of Conduct:</strong> Please follow AIM and host-institution conduct expectations; a specific policy link can be added here.</li>
+      <li><strong>Recording/Photos:</strong> TBA</li>
+      <li><strong>Privacy:</strong> TBA</li>
+    </ul>
+  </section>
 
-</body></html>
+  <footer>
+    <div>
+      Hosted at the American Institute of Mathematics (AIM), Pasadena, CA.
+      Organized by <a href="https://urldefense.com/v3/__https://www.aczenky.com/__;!!LIr3w8kk_Xxm!pDLMLkamC_VH9YoflGmwMX-eahsWS9XwBPa4050iLaGGHLYQKpWTZ1E7B9j-SjS7pOo48R8EGNzxCMZghrk$">Agustina Czenky</a>, <a href="https://urldefense.com/v3/__https://c-negron.github.io/__;!!LIr3w8kk_Xxm!pDLMLkamC_VH9YoflGmwMX-eahsWS9XwBPa4050iLaGGHLYQKpWTZ1E7B9j-SjS7pOo48R8EGNzxNh2ZFDA$">Cris Negron</a>, and
+      <a href="https://urldefense.com/v3/__https://www.pma.caltech.edu/people/davide-passaro__;!!LIr3w8kk_Xxm!pDLMLkamC_VH9YoflGmwMX-eahsWS9XwBPa4050iLaGGHLYQKpWTZ1E7B9j-SjS7pOo48R8EGNzxpOU_Vqs$">Davide Passaro</a>.
+    </div>
+    <div style="margin-top:6px">
+      Supported by Simons Collaboration Grant No. 999367.
+    </div>
+  </footer>
+</main>
+
+</body>
+</html>
