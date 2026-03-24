@@ -96,9 +96,45 @@ When writing up the HW, <b>summarize the question</b> as an introduction to each
 background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
 <br><br>
 
+<b>HW 6 (Due April X)</b><br><br>
+
+<b>1.</b> Prove that an ideal p in a commutative ring R is prime if and only if p is the kernel of a ring map &phi;: R &rarr; S to a domain S.
+<br><br>
+
+<b>2.</b> (a) Prove that the ideal (y<sup>3</sup>-x<sup>2</sup>, y<sup>5</sup>-x<sup>2</sup>) is not prime in <b>C</b>[x,y].<br>
+(b) Prove that the ideal (z-x<sup>2</sup>, z-y<sup>2</sup>) is not prime in <b>Q</b>[x,y,z].<br>
+(c) Prove that the ideal (y-x<sup>3</sup>-2x, x<sup>4</sup>+x<sup>3</sup>+x<sup>2</sup>+x) is prime in <b>Q</b>[x,y].<br>
+(d) Prove that the ideal (z<sup>2</sup>-xy) is prime in <b>F</b><sub>5</sub>[x,y,z]. [Hint: Consider the map <b>F</b><sub>5</sub>[x,y,z] &rarr; <b>F</b><sub>5</sub>[u,t] which sends x, y, and z to the degree 2 polynomials in <b>F</b><sub>5</sub>[u,t].]
+<br><br>
+
+<b>3.</b> For an ideal I in a commutative ring R, define the vanishing locus as the subset<br>
+&nbsp;&nbsp;&nbsp; Van(I)={p prime| I is contained in p} &subseteq; Spec(R).<br>
+Similarly define<br>
+&nbsp;&nbsp;&nbsp; mVan(I)={m maximal| I is contained in m} &subseteq; mSpec(R).<br>
+For any collection of ideals {I<sub>&lambda;</sub>| &lambda; in &Lambda;}, and any finite collection of ideals J<sub>1</sub>,...,J<sub>n</sub>, prove that<br>
+&nbsp;&nbsp;&nbsp; &cap;<sub>&lambda;</sub>Van(I<sub>&lambda;</sub>) = Van(&sum;<sub>&lambda;</sub>I<sub>&lambda;</sub>) &nbsp;and &nbsp;&cup;<sub>i=1</sub><sup>n</sup> Van(J<sub>i</sub>) = Van(&prod;<sub>i=1</sub><sup>n</sup>J<sub>i</sub>).<br>
+Convince yourself that the corresponding equalities hold when Van is replaced by mVan as well.
+<br><br>
+
+<b>4.</b> For an ideal I in R consider the complements U<sub>I</sub> = Spec(R)\Van(I) and mU<sub>I</sub> = mSpec(R)\mVan(I). Prove that the subsets U<sub>I</sub> provide the open sets in a topology for Spec(R).  Furthermore, taking U<sub>f</sub> = U<sub>(f)</sub> for any f in R, prove that the collection {U<sub>f</sub>| f in R} forms a base for this topology. Convince yourself that the analogous results hold for the mU<sub>I</sub> in mSpec(R). [These are called the <i>Zariski topologies</i> on Spec(R) and mSpec(R).]
+<br><br>
+
+<b>5.</b> Describe the open sets in mSpec(<b>C</b>[x]), under the Zariski topology. Prove that mSpec(<b>C</b>[x]) is a compact topological space, and also non-Hausdorff. [Indeed, mSpec(R) is compact whenever R is Noetherian, as is Spec(R).]
+<br><br>
+
+<b>6.</b> Let &phi;: R &rarr; S be any ring map.  Prove that &phi;<sup>-1</sup>(p) is prime in R whenever p is prime in S, so that we have a well defined set map &phi;<sup>*</sup>: Spec(S) &rarr; Spec(R). Prove that this map is continuous. 
+<br><br>
+
+<b>7.</b> When R and S are of finite type over a field k, prove that we similarly have an induced, continuous map on maximal spectra &phi;<sup>*</sup>: mSpec(S) &rarr; mSpec(R). [What goes wrong without the finite type assumption? Hint: Consult Zariski and HW 5 number 2.]
+<br><br>
+
+<hr style="height:2px;width:85%;margin-left:0;border-width:0;background-color: #ff1493;
+background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
+<br><br>
+
 <b>HW 5 (Due Never)</b><br><br>
 
-<b>1.</b> Let $G$ be a group with a presentation<br>
+<b>1.</b> Let G be a group with a presentation<br>
 &nbsp;&nbsp;&nbsp;G = &#x27E8;g<sub>1</sub>,...,g<sub>n</sub>| r<sub>1</sub>(g<sub>1</sub>,&#8943;,g<sub>n</sub>)=r<sub>1</sub>'(g<sub>1</sub>,&#8943;,g<sub>n</sub>),..., r<sub>t</sub>(g<sub>1</sub>,&#8943;,g<sub>n</sub>)=r<sub>t</sub>'(g<sub>1</sub>,&#8943;,g<sub>n</sub>)&#x27E9;,<br>
 where the r<sub>i</sub> and r'<sub>i</sub> are monomials in x<sub>j</sub><sup>&pm;1</sup>. Prove that, for any field k, the group algebra kG admits a presentation<br>
 &nbsp;&nbsp;&nbsp;kG = k&#x27E8;x<sub>1</sub>,...,x<sub>n</sub>,x<sub>1</sub><sup>-1</sup>,...,x<sub>n</sub><sup>-1</sup>&#x27E9;/(x<sub>i</sub>x<sub>i</sub><sup>-1</sup>-1, x<sub>i</sub><sup>-1</sup>x<sub>i</sub>-1, r<sub>1</sub>(x<sub>1</sub>,&#8943;,x<sub>n</sub>)-r<sub>1</sub>'(x<sub>1</sub>,&#8943;,x<sub>n</sub>),..., r<sub>t</sub>(x<sub>1</sub>,&#8943;,x<sub>n</sub>)-r<sub>t</sub>'(x<sub>1</sub>,&#8943;,x<sub>n</sub>)).
