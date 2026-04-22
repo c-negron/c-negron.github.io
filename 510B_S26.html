@@ -57,7 +57,7 @@ TA: Tianle Liu<br><br>
 Syllabus <a href="510Bsyl.pdf">here</a>.<br><br>
 
 Finite-dimensional lectures - <a href="1_algmod.pdf">1_algmod.pdf</a>, <a href="2_findim.pdf">2_findim.pdf</a>, <a href="3_ssmods.pdf">3_ssmods.pdf</a>, <a href="4_maschkaw.pdf">4_maschkaw.pdf</a>, <a href="5_jrad.pdf">5_jrad.pdf</a>, <a href="6_genrel.pdf">6_genrel.pdf</a><br><br>
-Commutative lectures - <a href="1_polys.pdf">1_polys.pdf</a>, <a href="2_ideals.pdf">2_ideals.pdf</a>, <a href="3_loc.pdf">3_loc.pdf</a>, <a href="4_radvan.pdf">4_radvan.pdf</a>
+Commutative lectures - <a href="1_polys.pdf">1_polys.pdf</a>, <a href="2_ideals.pdf">2_ideals.pdf</a>, <a href="3_loc.pdf">3_loc.pdf</a>, <a href="4_radvan.pdf">4_radvan.pdf</a>, <a href="5_finext.pdf">5_finext.pdf</a>
 </p>
 
 
@@ -91,6 +91,113 @@ Part II) Noetherian rings &rarr; Polynomial rings and finite type algebras &rarr
 </p>
 Report (presumed) errors via email or ask in class.  To be turned in in class.  Don't turn in garbage.<br><br>
 When writing up the HW, <b>summarize the question</b> as an introduction to each problem.
+
+
+<hr style="height:2px;width:85%;margin-left:0;border-width:0;background-color: #ff1493;
+background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
+<br><br>
+
+<b>HW Y (In class, finite extensions)</b><br><br>
+
+Given a map of (commutative) rings &phi;: R &rarr; S and a multiplicative set T in R, note that the R-module localization S[T<sup>-1</sup>] is equal to the ring theoretic localization S[T<sup>-1</sup>] = S[&phi;(T)<sup>-1</sup>]. In particular, S[T<sup>-1</sup>] has a ring structure given by the apparent formulas, and the ring map &phi; induces a corresponding ring map &phi;<sub>T</sub>: R[T<sup>-1</sup>] &rarr; S[T<sup>-1</sup>] which fits into the apparent diagram over &phi;.
+<br><br>
+
+We say &phi;: R &rarr; S a finite extension if &phi; is injective, and the corresponding R-action on S gives S the structure of a <i>finitely generated</i> R-module.
+<br><br>
+
+<b>1.</b> For a finite extension &phi;: R &rarr; S, and a prime p &subseteq; R, prove that the localized map &phi;<sub>p</sub>: R<sub>p</sub> &rarr; S<sub>p</sub> is also a finite extension.
+<br><br>
+
+<b>2.</b> For a finite extension &phi;: R &rarr; S, and a prime p &subseteq; R, prove that there is a prime q in S with &phi;<sup>-1</sup>(q) = p.
+<br><br>
+
+<b>3.</b> Rephrasing the last problem, given a finite ring extension &phi;, prove that the induced map on spectra &phi;<sup>*</sup>: Spec(S) &rarr; Spec(R) is surjective. Prove, furthermore, that all of the fibers &phi;<sup>*-1</sup>(p) are finite, and that there is a universal bound on the size of these fibers across all of Spec(R).
+<br><br>
+
+<b>4.</b> For a finite ring extension &phi;, prove that the induced map on spectra &phi;<sup>*</sup>: Spec(S) &rarr; Spec(R) is also closed. So, in total, &phi;<sup>*</sup> is a closed map with finite fibers in this case.
+<br><br>
+
+<b>5.</b> Provide an example of a ring map &phi;: R &rarr; S for which the induced map on spectra is <i>not</i> closed.
+<br><br>
+
+
+<hr style="height:2px;width:85%;margin-left:0;border-width:0;background-color: #ff1493;
+background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
+<br><br>
+
+<b>HW X (In class, irreducible varieties)</b><br><br>
+
+Below R is a commutative ring. By an irreducible subvariety, or an irreducible closed subset in Spec(R) we mean a closed subset Z which satisfies the following: For any decomposition of Z into a union Z = Z<sub>1</sub> &cup; Z<sub>2</sub> of closed subsets Z<sub>i</sub> in Spec(R) we have either Z = Z<sub>1</sub> or Z = Z<sub>2</sub>.<br><br>
+
+Below we argue that the irreducible closed subsets in Spec(R) are precisely the vanishing loci of a prime ideals in R.<br><br>
+
+<b>1.</b> Prove that a closed subset Z in Spec(R) is irreducible if and only if, for any containment Z &subseteq; (Z<sub>1</sub> &cup; Z<sub>2</sub>) with each Z<sub>i</sub> closed in Spec(R), we have either Z &subseteq; Z<sub>1</sub> or Z &subseteq; Z<sub>2</sub>.
+<br><br>
+
+<b>2.</b> For radical ideals I and J in R, prove that the intersection I &cap; J is radical as well, and that I &cap; J is the radical of the product ideal I&middot;J. Observe, as a consequence, that Van(I &cap; J) = Van(I&middot;J) = Van(I) &cup; Van(J).
+<br><br>
+
+<b>3.</b> Prove that the bijection Van: {radical ideals in R} &rarr; {closed subsets in Spec(R)} is inclusion reversing, i.e. I is contained in J if and only if Van(J) is contained in Van(I).
+<br><br>
+
+<b>4.</b> Prove that a closed subset Z is Spec(R) is irreducible if and only if Z = Van(I) for a prime ideal I. Prove, conversely, that an ideal I is prime in R if and only if Van(I) is irreducible in Spec(R).
+<br><br>
+
+
+<hr style="height:2px;width:85%;margin-left:0;border-width:0;background-color: #ff1493;
+background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
+<br><br>
+
+<b>HW 8 (Due April X)</b><br><br>
+
+Below all rings are commutative rings.<br><br>
+
+<b>1.</b> Classify all radical ideals in <b>C</b>[x]. More generally, for an arbitrary field k, classify all radical ideals in k[x].
+<br><br>
+
+<b>2.</b> For a point p in Spec(R), prove that p is maximal if and only if the singleton {p} is closed in Spec(R).
+<br><br>
+
+<b>3.</b> Prove that a radical ideal I in R is prime if and only if its vanishing locus Van(I) is an irreducible closed subset in Spec(R). Similarly, supposing R is of finite type over a field, prove that a radical ideal I &subseteq; R is prime if and only if mVan(I) is irreducible in mSpec(R).
+<br><br>
+
+<b>4.</b> For a closed subset Z in Spec(R), prove that Z is irreducible if and only if Z is obtained as the closure of a single point in p in Spec(R).
+<br><br>
+
+<b>5.</b> For any surjective ring map &phi;: R &rarr; S, prove that the induced map on spectra &phi;<sup>*</sup>: Spec(S) &rarr; Spec(R) is a closed embedding, i.e. an injection which sends closed sets to closed sets.
+<br><br>
+
+<b>6.</b> For any ring R take R<sub>rad</sub> = R/&radic;0. Prove that the surjection &pi;: R &rarr; R<sub>rad</sub> induces a homeomorphism of topological spaces &pi;<sup>*</sup>: Spec(R<sub>rad</sub>) &rarr; Spec(R). 
+<br><br>
+
+
+<hr style="height:2px;width:85%;margin-left:0;border-width:0;background-color: #ff1493;
+background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
+<br><br>
+
+<b>HW 7 (Due April 15)</b><br><br>
+
+Below all rings are commutative rings.<br><br>
+
+<b>1.</b> Let loc: R &rarr; R[T<sup>-1</sup>] be the localization map along a multiplicative subset T in R.<br>
+(a) For ideals I and J in R[T<sup>-1</sup>] prove that I = J if and only if loc<sup>-1</sup>(I) = loc<sup>-1</sup>(J).<br>
+(b) Prove that R[T<sup>-1</sup>] is Noetherian whenever R is Noetherian. 
+<br><br>
+
+<b>2.</b> Let R be a Noetherian ring and M be a finitely generated R-module. Fix a prime p &subseteq; R and take n = dim<sub>k(p)</sub>(k(p)&otimes;<sub>R</sub>M). Prove that there are n elements m<sub>1</sub>,...,m<sub>n</sub> in M, and an element f in the complement R\p, for which the localization M<sub>f</sub> is generated by (the images of) the m<sub>i</sub> as an R<sub>f</sub>-module. 
+<br><br>
+
+<b>3.</b> Let R be a local ring and M be a finitely generated R-module. Prove that M is projective if and only if M &cong; R<sup>&oplus;n</sup> for some n.
+<br><br>
+
+<b>4.</b> Let R be a Noetherian ring and M be a finitely generated projective R-module. Prove that, for each prime p &in; Spec(R), there is an element f &notin; p for which M<sub>f</sub> is a finite rank free module over the localization R<sub>f</sub>. In particular, the dimensions of the fibers k(p)&otimes;<sub>R</sub>M are locally constant across Spec(R). Equivalently, the dimension function<br>
+&nbsp;&nbsp;&nbsp; dim<sub>M</sub>: Spec(R) &rarr; <b>Z</b>, p &mapsto; dim(k(p)&otimes;<sub>R</sub>M),<br>
+is continuous. [One can interpret this statement as the claim that any finitely generated projective R-module specifies a finite rank vector bundle over the space Spec(R).]
+<br><br>
+
+<b>5.</b> Provide an example of a finitely generated R-module M for which the dimension function dim<sub>M</sub> (defined as above) is <i>not</i> continuous. Prove that your example does in fact satisfy the requisite condition.
+<br><br>
+
 
 <hr style="height:2px;width:85%;margin-left:0;border-width:0;background-color: #ff1493;
 background-image: linear-gradient(135deg, #b993d6, #8ca6db);">
